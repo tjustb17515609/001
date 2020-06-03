@@ -1,0 +1,98 @@
+<from name="usermodify"action="#"method="post">
+</from>
+<table border="1" bordercolor="00FFFF" width="60%" align="center" height="350" cellpadding="1">
+    <caption>个人用户信息注册</caption>
+</table>
+<table align="center" bordercolor="#B3B6EE">
+    <tr>
+        <th>用户名：</th>
+        <td>
+            <input type="text" maxlength="12"required pattern="^[a-zA-Z][a-zA-Z0-9]{4,11}$"autofocus/>
+        </td>
+        <td>（必填，用户名以字母开头，长度在5-12字节之间，允许包含字母、数字、下划线）</td>
+    </tr>
+    <tr>
+        <th>密码：</th>
+        <td>
+            <input type="password"maxlength="12"required pattern="^[a-zA-Z]\w{5,17}$"/>
+            <td>（必填，以字母开头，长度在5-12字节之间，允许包含字母、数字、下划线）</td>
+        </td>
+    </tr>
+    <tr>
+        <th>确认密码：</th>
+        <td>
+            <input type="password"maxlength="12"required pattern="^[a-zA-Z]\w{5,17}$"/>
+        </td>
+    </tr>
+    <tr>
+        <th>姓名：</th>
+        <td>
+            <input type="text"required/>
+            <td>(必填)</td>
+        </td>
+    </tr>
+    <tr>
+        <th>出生日期：</th>
+        <td>
+            <input type="date" value="1990/10/10"/>
+        </td>
+    </tr>
+    <tr>
+        <th>固定电话：</th>
+        <td>
+            <input type="tel"pattern="^(\d{3,4}\-?)?\d{7,8}$"/>
+        </td>
+        <td>（固定电话的格式：0000-1234567、000-12345678、1234567、12345678、00012345678）</td>
+    </tr>
+    <tr>
+        <th>手机号码：</th>
+        <td>
+            <input type="tel"pattern="^1[3|4|5|8][0-9]\d{4,8}$"/>
+        </td>
+        <td>(以13、14、15、18开头的手机号码)</td>
+    </tr>
+    <tr>
+        <th>E-mai地址：</th>
+        <td>
+            <input type="email"multiple/>
+        </td>
+        <td>(用户向您发送电子邮件，请确保输入正确，可以输入多个)</td>
+    </tr>
+    <tr>
+        <th>博客主页：</th>
+        <td>
+            <input type="url" placeholder="http://www.baidu.com"/>
+        </td>
+    </tr>
+    <tr>
+        <th>身份证号：</th>
+        <td>
+            <input type="text"pattern="^\d{8,18}|[0-9x]{8,18}|[0-9x]{8,18}?$"/>
+        </td>
+        <td>(以数字、字母x结尾的身份证号)</td>
+    </tr>
+    <tr>
+        <th>教育情况：</th>
+        <td>
+            <select>
+                <option value="小学">小学</option>
+                <option value="初中">初中</option>
+                <option value="高中">高中</option>
+                <option value="大专">大专</option>
+                <option value="本科">本科</option>
+                <option value="研究生">研究生</option>
+                <option value="硕士">硕士</option>
+                <option value="博士">博士</option>
+                <option value="其他">其他</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <input type="submit"/>
+        </th>
+        <td>
+            <input type="reset"/>
+        </td>
+    </tr>
+</table>
